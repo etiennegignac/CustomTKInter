@@ -1,0 +1,12 @@
+Hardware wiring:
+
+Touchscreen is running a Raspberry Pi with GPIO to control IO through Python.
+
+For seat control: RPI can control relay board directly (do we need a logic level converter??)
+
+For drivetrain display, RPI communicates with Arduino through modbus
+
+RPI needs to have minimalmodbus installed.
+RPI is the master and doesn't have data available.  Other modules are slaves with different IDs, they make data available.
+
+ID: 10 - Transfer case controller
